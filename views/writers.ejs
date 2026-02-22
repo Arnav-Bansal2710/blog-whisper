@@ -1,0 +1,33 @@
+<%- include("./partials/header") %>
+
+<h1 style="text-align: center;" class="display-5 fw-bold mb-4 head">Start Writing Your Blog</h1>
+<p style="text-align: center;" class="lead sub">Let your thoughts flow. Fill in the details below and hit publish when you're ready!</p>
+
+<form action="/submit" method="POST">
+    <div class="m-5">
+      <label for="title" class="form-label">Blog Title</label>
+      <input type="text" class="form-control" id="title" name="title" required>
+    </div>
+  
+    <div class="m-5">
+      <label for="category" class="form-label">Category</label>
+      <select class="form-select" id="category" name="category" required>
+        <option value="">Choose one...</option>
+        <option value="Tech">Tech</option>
+        <option value="Travel">Travel</option>
+        <option value="Lifestyle">Lifestyle</option>
+        <option value="Poetry">Poetry</option>
+        <option value="Other">Other</option>
+      </select>
+    </div>
+  
+    <div class="m-5">
+      <label for="content" class="form-label">Blog Content</label>
+      <textarea class="form-control" id="content" name="content" rows="10" required></textarea>
+    </div>
+  
+    <button style="background-color: #113F67;" type="submit" class="mx-5 btn btn-success">Publish Blog</button>
+  </form>
+  
+
+<%- include("./partials/footer") %>

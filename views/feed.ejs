@@ -1,0 +1,58 @@
+<%- include("partials/header") %>
+
+<% if (posts.length > 0) { %>
+
+  <div class="row m-5">
+    <h2 class="pb-2 head">Your blogs...</h2>
+
+    <% posts.forEach(post => { %>
+
+      <div class="col-md-6">
+        <div class="row g-0 border rounded mb-4 shadow-sm">
+
+          <div class="col p-4 d-flex flex-column">
+
+            <strong class="mb-2 text-primary-emphasis">
+              <%= post.cat %>
+            </strong>
+
+            <h3 class="mb-0 head">
+              <%= post.title %>
+            </h3>
+
+            <div class="mb-1 text-body-secondary">
+              <%= post.date.toDateString() %>
+            </div>
+
+            <p class="card-text sub">
+              <%= post.con %>
+            </p>
+
+          </div>
+
+        </div>
+      </div>
+
+    <% }) %>
+
+  </div>
+
+<% } else { %>
+
+  <div class="text-center m-5">
+
+    <h2 class="head">Your feed is empty</h2>
+
+    <p class="sub">
+      Go to Writers' Lounge to write your first blog ✍️
+    </p>
+
+    <a href="/writers" class="btn btn-primary mt-3">
+      Write a Blog
+    </a>
+
+  </div>
+
+<% } %>
+
+<%- include("partials/footer") %>

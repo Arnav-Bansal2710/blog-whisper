@@ -1,0 +1,63 @@
+<%- include("partials/header") %>
+
+<div class="container py-5" style="max-width: 800px;">
+
+  <h1 class="text-center display-5 fw-bold mb-3 head">
+    Contact Us
+  </h1>
+
+  <p class="text-center lead sub mb-5">
+    Have feedback, ideas, or questions? We'd love to hear from you 💬
+  </p>
+
+  <form action="/contact" method="POST">
+
+    <div class="mb-4">
+      <label for="name" class="form-label">Your Name</label>
+      <input type="text" class="form-control" id="name" name="name" required>
+    </div>
+
+    <div class="mb-4">
+      <label for="email" class="form-label">Email Address</label>
+      <input type="email" class="form-control" id="email" name="email" required>
+    </div>
+
+    <div class="mb-4">
+      <label for="message" class="form-label">Message</label>
+      <textarea
+        class="form-control"
+        id="message"
+        name="message"
+        rows="6"
+        required
+      ></textarea>
+    </div>
+
+    <div class="text-center">
+      <button type="submit" class="btn btn-primary px-5">
+        Send Message 📩
+      </button>
+    </div>
+
+  </form>
+
+  <hr class="my-5">
+
+  <div class="text-center">
+    <p class="sub">Or reach us directly at:</p>
+    <p><strong>Email:</strong> support@blogwhisper.com</p>
+  </div>
+
+  <div class="text-center mt-4">
+    <p class="sub fw-bold">Created by Arnav Bansal</p>
+    <p class="sub">Computer Science Student • DIT University</p>
+
+    <p>
+        <a href="https://github.com/Arnav-Bansal2710" target="_blank">GitHub</a> |
+        <a href="https://linkedin.com/in/arnav-bansal-338882195" target="_blank">LinkedIn</a>
+    </p>
+  </div>
+</div>
+
+
+<%- include("partials/footer") %>

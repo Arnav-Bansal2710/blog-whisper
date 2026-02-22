@@ -1,0 +1,39 @@
+
+.head{
+    color: #113F67;
+    font-size: 50px;
+    font-family: "Baloo 2", sans-serif;
+}
+.sub{
+    color: #58A0C8;
+    font-family: "Rowdies", sans-serif;
+}
+
+.active{
+    background-color: #113F67 !important;  /* your preferred color */
+    color: white !important;
+}
+
+
+.h{
+    color: #113F67;
+    font-size: 50px;
+    font-family: "Baloo 2", sans-serif;
+}
+.he{
+    color: #113F67;
+    font-size: 70px;
+    font-family: "Baloo 2", sans-serif;
+}
+  
+.s{
+    color: #58A0C8;
+    font-family: "Rowdies", sans-serif;
+    font-size: 20px;
+}
+
+.nav-link.active {
+  background-color: #113F67 !important;
+  color: white !important;
+  border-radius: 6px;
+}

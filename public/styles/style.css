@@ -37,3 +37,8 @@
   color: white !important;
   border-radius: 6px;
 }
+
+.card-text {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
